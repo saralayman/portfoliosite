@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Youngserif Regular;
+    src: url(youngserif-regular.ttf);
+}
+
+@font-face {
+    font-family: Agne Regular;
+    src: url(agne-regular.otf);
+}
+
+@font-face {
+    font-family: Canterbury;
+    src: url(canterbury.ttf);
+}
+
+/*****BASE STYLES*****/
+
+body {
+  font-family: 'Youngserif Regular';
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #f8f5f0;
+  color: #000000;
+}
+
+header,
+section {
+  padding: 30px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+header h1 a {
+	font-family: 'Youngserif Regular';
+  text-transform:  uppercase;
+  font-size: 36px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.about span {
+  font-family: 'Canterbury';
+  font-size: 26px;
+}
+
+#line-height {
+  line-height: 1.1;
+}
+
+#about {
+  top: 30vh;
+  right: 40px;
+  transform-origin: 100% 0;
+  transform: rotate(90deg);
+  position: fixed;
+}
+
+#hire {
+  top: 57vh;
+  transform-origin: 100% 0;
+  transform: rotate(90deg);
+  right: 40px;
+  position: fixed;
+}
+
+#moodboard {
+  top: 90vh;
+  transform-origin: 100% 0;
+  transform: rotate(90deg);
+  right: 40px;
+  position: fixed;
+}
+
+.navigation a {
+  font-size: 24px;
+  font-family: Agne Regular;
+  color: black;
+  text-decoration: none;
+}
+
+#about:hover {
+  transform: rotate(100deg) scale(1.1);
+  transition: 1.2s;
+  text-decoration: underline;
+}
+
+#hire:hover {
+  transform: rotate(85deg) scale(1.1);
+  transition: 1.2s;
+  text-decoration: underline;
+}
+
+#moodboard:hover {
+  transform: rotate(100deg) scale(1.1);
+  transition: 1.2s;
+  text-decoration: underline;
+}
+
+/*****SECTION*****/
+
+h2 {
+  width: 100%;
+  text-align: left !important;
+}
+
+section.about {
+  background-color: #f8edda;
+}
+
+section.about p {
+  max-width: 30em;
+}
+
+section.photo1 {
+  background-color: #f8e8cd;
+}
+
+section.photo2 {
+  background-color: #f8e8cd;
+}
+
+section.photo3 {
+  background-color: #f8e8cd;
+}
+
+section.photo {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.photo img {
+  max-width: 1000px;
+}
+
+section.contact {
+  background-color: #f8e8cd;
+  min-height: 100vh;
+}
+
+/******CONTACT*****/
+
+section.footer {
+  display: none;
+}
+
+
+/*****MEDIA******/
+
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    transition: 1.2s;
+    padding-top: 10px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 16px;
+    transition: 1.2s;
+    padding: 15px;
+  }
+
+  header {
+    height: 20vh;
+    transition: 1.2s;
+  }
+  
+ .about span {
+  font-size: 20px;
+}
+
+  section {
+    display: block;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  section h2 {
+    font-size: 18px;
+    align-items: center;
+    justify-items: center;
+    text-align: center !important;
+    width: 100%;
+  }
+  section.photo {
+    height: 50vh;
+  }
+
+   section img {
+    width: 50vh;
+  }
+  
+  #about,
+  #hire,
+  #moodboard {
+    display: none;
+    transition: 1.2s;
+    right: 10px;
+  }
+ 
+  section.footer {
+    bottom: 0;
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  
+  section.footer a {
+    color: black;
+    text-decoration: none; 
+  }
+
+}
